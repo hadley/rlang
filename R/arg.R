@@ -50,12 +50,12 @@ arg_match <- function(arg, values = NULL) {
 
 #' @description
 #' `arg_match0()` is a bare-bones version if performance is at a premium.
-#' It requires a string as `arg` and explicit `values`.
+#' It requires a string as `arg` and explicit character `values`.
 #' For convenience, `arg` may also be a character vector containing
 #' every element of `values`, possibly permuted.
 #' In this case, the first element of `arg` is used.
 #'
-#' @param values The possible values that `arg` can take.
+#' @param values A character vector of possible values that `arg` can take.
 #' @param arg_nm Argument name of `arg` to use in error messages. Can
 #'   be a string or symbol.
 #' @rdname arg_match

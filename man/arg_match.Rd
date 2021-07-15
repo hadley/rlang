@@ -12,7 +12,7 @@ arg_match0(arg, values, arg_nm = substitute(arg))
 \arguments{
 \item{arg}{A symbol referring to an argument accepting strings.}
 
-\item{values}{The possible values that \code{arg} can take.}
+\item{values}{A character vector of possible values that \code{arg} can take.}
 
 \item{arg_nm}{Argument name of \code{arg} to use in error messages. Can
 be a string or symbol.}
@@ -32,7 +32,7 @@ standards.
 \link[=caller_frame]{caller frame}.
 
 \code{arg_match0()} is a bare-bones version if performance is at a premium.
-It requires a string as \code{arg} and explicit \code{values}.
+It requires a string as \code{arg} and explicit character \code{values}.
 For convenience, \code{arg} may also be a character vector containing
 every element of \code{values}, possibly permuted.
 In this case, the first element of \code{arg} is used.
